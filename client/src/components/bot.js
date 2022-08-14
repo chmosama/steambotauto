@@ -68,7 +68,7 @@ class Bot extends Component {
         tempGames.push('');
         this.setState({games:tempGames})
         this.needToUpdate();
-        console.log(tempGames);
+        console.log(this.state.games);
     }
 
     deleteGame(index){
