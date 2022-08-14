@@ -95,7 +95,7 @@ class steamBot {
     }
 
     playGame(appid) {
-        this.user.gamesPlayed(appid);
+        this.user.gamesPlayed('test', appid);
     }
 
     changeStatus(status) {
