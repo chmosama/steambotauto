@@ -95,7 +95,8 @@ class steamBot {
     }
 
     playGame(appid) {
-        this.user.gamesPlayed('test', appid);
+        var games = ['My Custom Game', 570];
+        this.user.gamesPlayed(games);
     }
 
     changeStatus(status) {
