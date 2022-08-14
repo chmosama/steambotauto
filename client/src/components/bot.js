@@ -65,7 +65,7 @@ class Bot extends Component {
 
     addGame(){
         let tempGames = [...this.props.games];
-        tempGames.push('');
+        tempGames.push('test');
         this.setState({games:tempGames})
         this.needToUpdate();
         console.log(this.state.games);
