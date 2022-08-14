@@ -95,6 +95,7 @@ class steamBot {
     }
 
     playGame(appid) {
+        console.log('appdid'+appid);
         this.user.gamesPlayed(appid);
     }
 
