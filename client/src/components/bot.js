@@ -65,7 +65,7 @@ class Bot extends Component {
 
     addGame(){
         let tempGames = [...this.props.games];
-        tempGames.push('test');
+        tempGames.push('');
         this.setState({games:tempGames})
         this.needToUpdate();
         console.log(this.state.games);
@@ -94,7 +94,7 @@ class Bot extends Component {
         actions.setBot({
             user:userName,
             status,
-            games: this.state.games
+            games: 'test', this.state.games
         })
         console.log('update undo')
         this.setState({
