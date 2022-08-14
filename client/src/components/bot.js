@@ -8,7 +8,7 @@ class Bot extends Component {
         this.state = {
             steamguard: '',
             needToUpdate: false,
-            games:[], // this is the client side games
+            games:['test'], // this is the client side games
             undoGames:[]
         }
     }
@@ -68,6 +68,7 @@ class Bot extends Component {
         tempGames.push('');
         this.setState({games:tempGames})
         this.needToUpdate();
+        console.log(tempGames);
     }
 
     deleteGame(index){
